@@ -1,15 +1,13 @@
 package com.example.recyclingapp;
 
-import androidx.annotation.NonNull;
+import android.os.Bundle;
+import android.view.MenuItem;
+
 import androidx.appcompat.app.ActionBarDrawerToggle;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
 import androidx.core.view.GravityCompat;
 import androidx.drawerlayout.widget.DrawerLayout;
-
-import android.os.Bundle;
-import android.view.MenuItem;
-import android.widget.Toast;
 
 import com.google.android.material.navigation.NavigationView;
 
@@ -53,27 +51,25 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
                 //Places the Home fragment into the fragment frame layout we set up
                     getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container, new HomeFragment()).commit();
                 break;
-            case R.id.nav_schedule:
-                //Places the settings fragment into the fragment frame layout we set up
-                getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container, new ScheduleFragment()).commit();
+            case R.id.nav_queens:
+                //Places the profile fragment into the fragment frame layout we set up
+                getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container, new QueensFragment()).commit();
                 break;
-            case R.id.nav_search:
-                //Places the settings fragment into the fragment frame layout we set up
-                getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container, new SearchFragment()).commit();
-                break;
+
             case R.id.nav_guide:
                 //Places the profile fragment into the fragment frame layout we set up
                 getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container, new GuideFragment()).commit();
                 break;
-            case R.id.nav_onCampus:
-                //Places the settings fragment into the fragment frame layout we set up
-                getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container, new OnCampusFragment()).commit();
+
+            case R.id.nav_aboutus:
+                //Places the profile fragment into the fragment frame layout we set up
+                getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container, new AboutusFragment()).commit();
                 break;
             case R.id.nav_resources:
-                Toast.makeText(this, "Resources", Toast.LENGTH_SHORT).show();
+                getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container, new ResourcesFragment()).commit();
                 break;
             case R.id.nav_settings:
-                Toast.makeText(this, "Settings", Toast.LENGTH_SHORT).show();
+                getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container, new SettingsFragment()).commit();
                 break;
 
         }

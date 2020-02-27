@@ -11,30 +11,29 @@
             android:title="Home" />
 
         <item
-            android:id="@+id/nav_schedule"
+            android:id="@+id/nav_queens"
             android:icon="@drawable/ic_event_black_24dp"
-            android:title="Schedule" />
-
-        <item
-            android:id="@+id/nav_search"
-            android:icon="@drawable/ic_search_black_24dp"
-            android:title="Search" />
+            android:title="Queens" />
 
         <item
             android:id="@+id/nav_guide"
             android:icon="@drawable/ic_home"
             android:title="Guide" />
 
-        <item
-            android:id="@+id/nav_onCampus"
-            android:icon="@drawable/ic_account"
-            android:title="On Campus" />
+
+
+
 
     </group>
 
 
-    <item android:title="Help">
+    <item android:title="Extra">
         <menu>
+            <item
+            android:id="@+id/nav_aboutus"
+            android:icon="@drawable/ic_search_black_24dp"
+            android:title="About Us" />
+
             <item
                 android:id="@+id/nav_resources"
                 android:icon="@drawable/ic_share"

@@ -7,9 +7,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.EditText;
-import android.widget.ListView;
 
-import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 
@@ -79,10 +77,10 @@ public class HomeFragment extends Fragment {
 
 
 
-        ItemListAdapter adapter = new ItemListAdapter(mCtx , R.layout.adapter_item_layout, displayedList);
-        ListView mListView = v.findViewById(R.id.home_items_list);
-
-        mListView.setAdapter(adapter);
+//        ItemListAdapter adapter = new ItemListAdapter(mCtx , R.layout.adapter_item_layout, displayedList);
+//        ListView mListView = v.findViewById(R.id.home_items_list);
+//
+//        mListView.setAdapter(adapter);
 
         //Figure out how to filter list down through the search bar
         //Preferably as the user types it will automatically filter the list however if not then use the search button.
@@ -91,7 +89,6 @@ public class HomeFragment extends Fragment {
 //
 //        searchBtn.setOnClickListener(
 //                (View.OnClickListener) (displayedList = FilterList(overallList, searchBar.getText().toString()))
-//
 //        );
 
         return v;
