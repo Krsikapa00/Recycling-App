@@ -41,8 +41,6 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
             navigationView.setCheckedItem(R.id.nav_home);
         }
     }
-
-
     //Callback for when item in Navigation view are pressed
     @Override
     public boolean onNavigationItemSelected(MenuItem menuItem) {
@@ -55,12 +53,10 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
                 //Places the profile fragment into the fragment frame layout we set up
                 getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container, new QueensFragment()).commit();
                 break;
-
             case R.id.nav_guide:
                 //Places the profile fragment into the fragment frame layout we set up
                 getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container, new GuideFragment()).commit();
                 break;
-
             case R.id.nav_aboutus:
                 //Places the profile fragment into the fragment frame layout we set up
                 getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container, new AboutusFragment()).commit();
@@ -71,7 +67,6 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
             case R.id.nav_settings:
                 getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container, new SettingsFragment()).commit();
                 break;
-
         }
         //Closes drawer after item has been selected
         drawer.closeDrawer(GravityCompat.START);

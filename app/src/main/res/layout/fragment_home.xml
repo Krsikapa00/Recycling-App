@@ -20,7 +20,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical"
-            android:background="@drawable/back">
+            >
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -40,7 +40,8 @@
                 android:layout_height="wrap_content"
                 android:hint="February 2nd, 2020"
                 android:inputType="date"
-                android:textAlignment="center" />
+                android:textAlignment="center"
+                android:gravity="center_horizontal" />
 
         </LinearLayout>
 
@@ -62,7 +63,8 @@
                 android:layout_height="wrap_content"
                 android:hint="Recycling, Compost"
                 android:inputType="text"
-                android:textAlignment="center" />
+                android:textAlignment="center"
+                android:gravity="center_horizontal" />
 
         </LinearLayout>
 
