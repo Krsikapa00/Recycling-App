@@ -2,16 +2,15 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical">
 
 
-<!--    <include-->
-<!--        android:id="@+id/home_searchcomponent"-->
-<!--        layout="@layout/component_searchbar" />-->
-    <SearchView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/home_searchcomponent" />
+    <!--    <include-->
+    <!--        android:id="@+id/home_searchcomponent"-->
+    <!--        layout="@layout/component_searchbar" />-->
+
+
 
 
     <LinearLayout
@@ -23,56 +22,56 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="vertical"
-            >
+            android:orientation="vertical">
 
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_margin="5dp"
-            android:orientation="horizontal">
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginRight="20dp"
-                android:text="Next Pick-up day:" />
-
-            <TextView
-                android:id="@+id/home_nextPickupDay"
+            <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:hint="February 2nd, 2020"
-                android:inputType="date"
-                android:textAlignment="center"
-                android:gravity="center_horizontal" />
+                android:layout_margin="5dp"
+                android:orientation="horizontal">
 
-        </LinearLayout>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="20dp"
+                    android:text="Next Pick-up day:" />
 
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_margin="5dp"
-            android:orientation="horizontal">
+                <TextView
+                    android:id="@+id/home_nextPickupDay"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:hint="February 2nd, 2020"
+                    android:inputType="date"
+                    android:textAlignment="center" />
 
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginRight="20dp"
-                android:text="Items to be picked up: " />
+            </LinearLayout>
 
-            <TextView
-                android:id="@+id/home_pickupItems"
+            <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:hint="Recycling, Compost"
-                android:inputType="text"
-                android:textAlignment="center"
-                android:gravity="center_horizontal" />
+                android:layout_margin="5dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="20dp"
+                    android:text="Items to be picked up: " />
+
+                <TextView
+                    android:id="@+id/home_pickupItems"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:hint="Recycling, Compost"
+                    android:inputType="text"
+                    android:textAlignment="center" />
+
+            </LinearLayout>
 
         </LinearLayout>
 
-        </LinearLayout>
         <ImageView
             android:layout_width="match_parent"
             android:layout_height="0dp"
