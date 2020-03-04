@@ -1,6 +1,5 @@
 package com.example.recyclingapp;
 
-import android.app.ActionBar;
 import android.content.Context;
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -18,39 +17,45 @@ public class GuideFragment extends Fragment {
     @Nullable
 
     private BottomNavigationView navigation;
-    private ActionBar toolbar;
 
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
-        View v = inflater.inflate(R.layout.fragment_guide, container,false);
+        View v = inflater.inflate(R.layout.fragment_guide, container, false);
 
         Context mCtx = getActivity().getApplicationContext();
 
-
-         navigation = v.findViewById(R.id.guide_nav_view);
-         navigation.setOnNavigationItemSelectedListener(mOnNavigationItemSelectedListener);
-
+        //assigns the bottom navigation to this variable
+        navigation = v.findViewById(R.id.guide_nav_view);
+        //Sets the navigations on click listener
+        navigation.setOnNavigationItemSelectedListener(mOnNavigationItemSelectedListener);
+        //Starting screen page
+        getFragmentManager().beginTransaction().replace(R.id.guide_fragment_container, new RecyclingFragment()).commit();
 
         return v;
     }
+//Onclick listener for the bottom navigation
     private BottomNavigationView.OnNavigationItemSelectedListener mOnNavigationItemSelectedListener =
             new BottomNavigationView.OnNavigationItemSelectedListener() {
-        @Override
-        public boolean onNavigationItemSelected(MenuItem item) {
-            switch (item.getItemId()){
-                case R.id.bottomnav_compost:
-                    getFragmentManager().beginTransaction().replace(R.id.guide_fragment_container, new CompostFragment()).commit();
-                    break;
-                case R.id.bottomnav_garbage:
-                    getFragmentManager().beginTransaction().replace(R.id.guide_fragment_container, new GarbageFragment()).commit();
-                    break;
-                case R.id.bottomnav_recycling:
-                    getFragmentManager().beginTransaction().replace(R.id.guide_fragment_container, new RecyclingFragment()).commit();
-                    break;
-                case R.id.bottomnav_special:
-                    getFragmentManager().beginTransaction().replace(R.id.guide_fragment_container, new OtherItemsFragment()).commit();
-                    break;
-            }
-            return false;
-        }
-    };
+                @Override
+                public boolean onNavigationItemSelected(MenuItem item) {
+                    Fragment selectedFragment = null;
+                    switch (item.getItemId()) {
+                        case R.id.bottomnav_compost:
+                            selectedFragment = new CompostFragment();
+                            break;
+                        case R.id.bottomnav_garbage:
+                            selectedFragment = new GarbageFragment();
+                            break;
+                        case R.id.bottomnav_recycling:
+                            selectedFragment = new RecyclingFragment();
+                            break;
+                        case R.id.bottomnav_special:
+                            selectedFragment = new OtherItemsFragment();
+                            break;
+                    }
+                    assert getFragmentManager() != null;
+                    getFragmentManager().beginTransaction().replace(R.id.guide_fragment_container, selectedFragment).commit();
+
+                    return true;
+                }
+            };
 }

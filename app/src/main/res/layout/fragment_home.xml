@@ -5,9 +5,13 @@
     android:orientation="vertical">
 
 
-    <include
-        android:id="@+id/home_searchcomponent"
-        layout="@layout/component_searchbar" />
+<!--    <include-->
+<!--        android:id="@+id/home_searchcomponent"-->
+<!--        layout="@layout/component_searchbar" />-->
+    <SearchView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/home_searchcomponent" />
 
 
     <LinearLayout

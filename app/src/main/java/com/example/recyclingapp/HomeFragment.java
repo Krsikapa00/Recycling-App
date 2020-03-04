@@ -69,6 +69,7 @@ public class HomeFragment extends Fragment {
 
 
         //Filtering down the list of items
+        //USE ADAPTER.FILTER
         //Find the search bar component
         EditText searchBar = v.findViewById(R.id.home_searchcomponent).findViewById(R.id.component_searchbar);
         Button searchBtn = v.findViewById(R.id.home_searchcomponent).findViewById(R.id.component_searchBtn);
@@ -77,8 +78,8 @@ public class HomeFragment extends Fragment {
 
 
 
-//        ItemListAdapter adapter = new ItemListAdapter(mCtx , R.layout.adapter_item_layout, displayedList);
-//        ListView mListView = v.findViewById(R.id.home_items_list);
+//       ItemListAdapter adapter = new ItemListAdapter(mCtx , R.layout.adapter_item_layout, displayedList);
+//       ListView mListView = v.findViewById(R.id.home_items_list);
 //
 //        mListView.setAdapter(adapter);
 
