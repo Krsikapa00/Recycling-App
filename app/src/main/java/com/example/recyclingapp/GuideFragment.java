@@ -28,7 +28,7 @@ public class GuideFragment extends Fragment {
         //Sets the navigations on click listener
         navigation.setOnNavigationItemSelectedListener(mOnNavigationItemSelectedListener);
         //Starting screen page
-        getFragmentManager().beginTransaction().replace(R.id.guide_fragment_container, new RecyclingFragment()).commit();
+        getFragmentManager().beginTransaction().replace(R.id.guide_fragment_container, new BlueBinFragment()).commit();
 
         return v;
     }
@@ -39,17 +39,20 @@ public class GuideFragment extends Fragment {
                 public boolean onNavigationItemSelected(MenuItem item) {
                     Fragment selectedFragment = null;
                     switch (item.getItemId()) {
-                        case R.id.bottomnav_compost:
-                            selectedFragment = new CompostFragment();
+                        case R.id.bottomnav_greenbin:
+                            selectedFragment = new GreenBinFragment();
                             break;
                         case R.id.bottomnav_garbage:
                             selectedFragment = new GarbageFragment();
                             break;
-                        case R.id.bottomnav_recycling:
-                            selectedFragment = new RecyclingFragment();
+                        case R.id.bottomnav_bluebin:
+                            selectedFragment = new BlueBinFragment();
                             break;
                         case R.id.bottomnav_special:
                             selectedFragment = new OtherItemsFragment();
+                            break;
+                        case R.id.bottomnav_greybin:
+                            selectedFragment = new GreyBinFragment();
                             break;
                     }
                     assert getFragmentManager() != null;

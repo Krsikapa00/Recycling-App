@@ -16,7 +16,7 @@ import com.miguelcatalan.materialsearchview.MaterialSearchView;
 public class MainActivity extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener {
 
     DrawerLayout drawer;
-    String [] list;
+    String[] list;
     MaterialSearchView materialSearchView;
 
     @Override
@@ -46,7 +46,7 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         }
 
         //SEARCH BAR CODE BELOW
-        list = new String []{"one","two","three","four","five","six","seven","eight","nine","ten"};
+        list = new String[]{"one", "two", "three", "four", "five", "six", "seven", "eight", "nine", "ten"};
         materialSearchView = findViewById(R.id.main_searchcomponent);
         materialSearchView.clearFocus();
         materialSearchView.closeSearch();
@@ -65,8 +65,6 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
                 return false;
             }
         });
-
-
     }
 
     @Override
@@ -74,7 +72,6 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         getMenuInflater().inflate(R.menu.search_menu, menu);
         MenuItem item = menu.findItem(R.id.search_menu_search);
         materialSearchView.setMenuItem(item);
-
         return true;
     }
 
@@ -84,7 +81,7 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         switch (menuItem.getItemId()) {
             case R.id.nav_home:
                 //Places the Home fragment into the fragment frame layout we set up
-                    getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container, new HomeFragment()).commit();
+                getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container, new HomeFragment()).commit();
                 break;
             case R.id.nav_queens:
                 //Places the profile fragment into the fragment frame layout we set up
@@ -110,15 +107,11 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         return true;
     }
 
-
     public void onBackPressed() {
         if (drawer.isDrawerOpen(GravityCompat.START)) {
             drawer.closeDrawer(GravityCompat.START);
-        } else {
-            super.onBackPressed();
         }
-
-        if (materialSearchView.isSearchOpen()){
+        else if (materialSearchView.isSearchOpen()) {
             materialSearchView.closeSearch();
         } else {
             super.onBackPressed();

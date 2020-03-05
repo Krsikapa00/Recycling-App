@@ -1,14 +1,20 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="match_parent" android:layout_height="match_parent"
-    android:background="@android:color/holo_green_light">
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Queen's Fragment"
-        android:textSize="30sp"
-        android:layout_centerInParent="true"
-        />
+<!--Recycler view of all dining halls and the different vendors
+each item will contain just the name of the hall (Possibly a picture of a logo?)
 
+When you click on the item an alert window will popup showing common items
+for users to throw out
+
+Figure out ALERT WINDOW IF MULTIPLE THINGS CAN BE ADDED
+Title of each bin, with the items listed below-->
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/queens_recyclerview"/>
+    
 </RelativeLayout>

@@ -1,83 +1,111 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical">
 
-
-    <!--    <include-->
-    <!--        android:id="@+id/home_searchcomponent"-->
-    <!--        layout="@layout/component_searchbar" />-->
+    <!--next up date-->
 
 
-
-
-    <LinearLayout
-        android:id="@+id/home_schedule_layout"
+    <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="vertical">
+        android:layout_marginTop="15dp">
+
+        <TextView
+            android:id="@+id/home_Section"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:layout_marginTop="20dp"
+            android:text="Section" />
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:id="@+id/adapter_itemcollectionlayout"
+            android:layout_below="@id/home_Section"
+            android:background="@drawable/textbox_background"
             android:orientation="vertical">
 
-            <LinearLayout
+            <TextView
+                android:id="@+id/adapter_nextcollectiontitle"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_margin="5dp"
-                android:orientation="horizontal">
+                android:layout_margin="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:text="Next collection date:" />
+
+            <LinearLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/adapter_nextcollectiontitle"
+                android:orientation="vertical">
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginRight="20dp"
-                    android:text="Next Pick-up day:" />
+                    android:layout_margin="10dp"
+                    android:text="Items to be collected:" />
 
-                <TextView
-                    android:id="@+id/home_nextPickupDay"
+                <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:gravity="center_horizontal"
-                    android:hint="February 2nd, 2020"
-                    android:inputType="date"
-                    android:textAlignment="center" />
+                    android:orientation="horizontal"
+                    >
+
+                    <Button
+                        android:id="@+id/home_binbtn1"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="40dp"
+                        android:text="Recycling"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp"
+                        />
+
+                    <Button
+                        android:id="@+id/home_binbtn2"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="40dp"
+                        android:text="Garbage"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp"
+                        />
+
+                    <Button
+                        android:id="@+id/home_binbtn3"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="40dp"
+                        android:text="Compost"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp"
+                        />
+                </LinearLayout>
 
             </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_margin="5dp"
-                android:orientation="horizontal">
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginRight="20dp"
-                    android:text="Items to be picked up: " />
-
-                <TextView
-                    android:id="@+id/home_pickupItems"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:gravity="center_horizontal"
-                    android:hint="Recycling, Compost"
-                    android:inputType="text"
-                    android:textAlignment="center" />
-
-            </LinearLayout>
-
         </LinearLayout>
 
-        <ImageView
-            android:layout_width="match_parent"
-            android:layout_height="0dp"
-            android:layout_weight="1"
-            android:background="@color/colorPrimary"
-            android:src="@drawable/map_example" />
 
-    </LinearLayout>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Future Collection Days:"
+            android:textSize="17sp"
+            android:layout_below="@id/adapter_itemcollectionlayout"/>
+
+    </RelativeLayout>
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/home_pickupdates_listview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+
 </LinearLayout>

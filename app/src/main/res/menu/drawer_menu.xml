@@ -13,37 +13,28 @@
         <item
             android:id="@+id/nav_queens"
             android:icon="@drawable/ic_event_black_24dp"
-            android:title="Queens" />
+            android:title="Queen's Campus" />
 
         <item
             android:id="@+id/nav_guide"
             android:icon="@drawable/ic_home"
             android:title="Guide" />
 
-
-
-
-
-    </group>
-
-
-    <item android:title="Extra">
-        <menu>
-            <item
+        <item
             android:id="@+id/nav_aboutus"
             android:icon="@drawable/ic_search_black_24dp"
             android:title="About Us" />
 
-            <item
-                android:id="@+id/nav_resources"
-                android:icon="@drawable/ic_share"
-                android:title="Resources" />
+        <item
+            android:id="@+id/nav_resources"
+            android:icon="@drawable/ic_share"
+            android:title="Resources" />
 
-            <item
-                android:id="@+id/nav_settings"
-                android:icon="@drawable/ic_more"
-                android:title="Settings" />
-        </menu>
-    </item>
+        <item
+            android:id="@+id/nav_settings"
+            android:icon="@drawable/ic_more"
+            android:title="Settings" />
+
+    </group>
 
 </menu>

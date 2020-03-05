@@ -12,18 +12,31 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import java.util.ArrayList;
 
-public class RecycleViewAdapter extends RecyclerView.Adapter<RecycleViewAdapter.MyViewHolder> {
+public class ItemsAdapter extends RecyclerView.Adapter<ItemsAdapter.MyViewHolder> {
 
-    Context mContext;
-    int mResource;
-    ArrayList<ItemClass> itemList;
+    private Context mContext;
+    private int mResource;
+    private ArrayList<ItemClass> itemList;
 
-    public RecycleViewAdapter(Context context, int resource, ArrayList<ItemClass> objects) {
+    public ItemsAdapter(Context context, int resource, ArrayList<ItemClass> objects) {
         mContext = context;
         mResource = resource;
         itemList = objects;
     }
 
+    public class MyViewHolder extends RecyclerView.ViewHolder {
+
+        TextView tvName;
+        TextView tvBin;
+        LinearLayout layout;
+
+        public MyViewHolder(View itemView) {
+            super(itemView);
+            tvName = itemView.findViewById(R.id.adapter_itemname);
+            tvBin = itemView.findViewById(R.id.adapter_itembin);
+            layout = itemView.findViewById(R.id.adapter_itemlayout);
+        }
+    }
 
     @NonNull
     @Override
@@ -53,27 +66,9 @@ public class RecycleViewAdapter extends RecyclerView.Adapter<RecycleViewAdapter.
             holder.layout.setBackgroundColor(mContext.getResources().getColor(R.color.Hazard));
         }
     }
-
     @Override
     public int getItemCount() {
         return itemList.size();
-    }
-
-
-    public class MyViewHolder extends RecyclerView.ViewHolder {
-
-        TextView tvName;
-        TextView tvBin;
-        LinearLayout layout;
-
-        public MyViewHolder(View itemView) {
-            super(itemView);
-            tvName = itemView.findViewById(R.id.adapter_itemname);
-            tvBin = itemView.findViewById(R.id.adapter_itembin);
-            layout = itemView.findViewById(R.id.adapter_itemlayout);
-
-        }
-
     }
 
 //    @SuppressLint("ViewHolder")
