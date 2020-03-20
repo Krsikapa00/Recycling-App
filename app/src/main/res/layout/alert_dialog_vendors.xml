@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/alert_vendor_header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Vendor Title"
+        android:textSize="30sp"
+        android:gravity="center_horizontal"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Common Items:"
+        />
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:id="@+id/alert_vendor_commonitemlist"/>
+
+    <Button
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:text="Close"
+        android:id="@+id/alert_vendor_closebtn"
+        android:layout_gravity="center_horizontal"/>
+
+
+
+
+</LinearLayout>

@@ -62,7 +62,7 @@
                         android:layout_width="0dp"
                         android:layout_weight="1"
                         android:layout_height="40dp"
-                        android:text="Recycling"
+                        android:text="Blue Bin"
                         android:layout_marginLeft="5dp"
                         android:layout_marginRight="5dp"
                         />
@@ -82,7 +82,7 @@
                         android:layout_width="0dp"
                         android:layout_weight="1"
                         android:layout_height="40dp"
-                        android:text="Compost"
+                        android:text="Green Bin"
                         android:layout_marginLeft="5dp"
                         android:layout_marginRight="5dp"
                         />

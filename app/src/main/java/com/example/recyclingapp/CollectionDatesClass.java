@@ -2,7 +2,7 @@ package com.example.recyclingapp;
 
 import java.util.ArrayList;
 
-class CollectionDatesClass {
+public class CollectionDatesClass {
     //Basic class set up to hold the information for each collection date.
     String Date;
     ArrayList<String> Bins;

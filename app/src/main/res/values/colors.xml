@@ -1,11 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="colorPrimary">#008577</color>
-    <color name="colorPrimaryDark">#00574B</color>
-    <color name="colorAccent">#D81B60</color>
-    <color name="recycling">#E62139C7</color>
-    <color name="Garbage">#D079797C</color>
-    <color name="Compost">#B30ABE00</color>
+    <color name="colorPrimary">#248829</color>
+    <color name="colorPrimaryDark">#025506</color>
+    <color name="colorAccent">#0077ED</color>
+    <color name="blueBin">#E62139C7</color>
+    <color name="Garbage">#BE16161B</color>
+    <color name="greenBin">#B30ABE00</color>
+    <color name="greyBin">#B3656565</color>
     <color name="Hazard">#B3E9D529</color>
 
     <color name="white">#FFFFFF</color>

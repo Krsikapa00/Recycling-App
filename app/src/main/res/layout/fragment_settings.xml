@@ -9,20 +9,73 @@
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
         android:text="Settings Fragment"
-        android:textSize="30sp" />
+        android:textSize="30sp"
+        />
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:id="@+id/settings_option_group">
+
+<!--        Set Colours for all buttons matching the map-->
+        <RadioButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:text="Monday"
+            android:id="@+id/settings_option_monday"/>
+        <RadioButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Tuesday"
+            android:id="@+id/settings_option_tuesday"/>
+        <RadioButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Wednesday"
+            android:id="@+id/settings_option_wednesday"/>
+        <RadioButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Thursday"
+            android:id="@+id/settings_option_thursday"/>
+        <RadioButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Friday"
+            android:id="@+id/settings_option_friday"/>
+
+    </RadioGroup>
+
+    <Button
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:text="Save"
+        android:id="@+id/settings_button_save"
+        android:layout_gravity="center_horizontal"/>
 
     <ImageView
         android:layout_width="match_parent"
+        android:id="@+id/settings_map_image"
         android:layout_height="0dp"
         android:layout_weight="1"
-        android:src="@drawable/map_example" />
+        android:src="@drawable/monday_collection" />
 
-<!--    Change setting locations - have pop up window to choose the location
 
-Notifications
-Report problems
-Terms and conditions?
-MAP Picture
+
+    <!--    Change setting locations - have pop up window to choose the location
+
+    Notifications
+    Report problems
+    Terms and conditions?
+    MAP Picture
+
+    -->
+
+<!-- Create options selection
+create save button
+    save selected option to shared preference
+    Load it at the beginning of the file
 
 -->
 
