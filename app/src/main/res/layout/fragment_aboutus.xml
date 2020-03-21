@@ -1,13 +1,34 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="match_parent" android:layout_height="match_parent"
-    android:background="@android:color/holo_blue_light">
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
 
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Q.U.E.S.T"
+        android:gravity="center_horizontal"
+        android:textSize="30sp"
+        android:id="@+id/aboutus_quest_title"
+        />
+    <TextView
+        android:id="@+id/aboutus_quest_titlelong"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Queen's University Experimental Sustainability Team"
+        android:textSize="20sp"
+        android:gravity="center_horizontal"/>
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="About Us Fragment"
-        android:textSize="30sp"
-        android:layout_centerInParent="true"
-        />
-</RelativeLayout>
+        android:textSize="15sp"
+        android:gravity="center_horizontal"
+        android:text="Queen’s University Experimental Sustainability Team (QUEST) is a design team at Queen’s, focusing on sustainable practices on Campus. QUEST would particularly like to help students become more conscious about their choices affecting the environment."/>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/quest"/>
+
+</LinearLayout>

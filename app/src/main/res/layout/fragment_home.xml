@@ -13,30 +13,38 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="15dp">
 
-        <TextView
-            android:id="@+id/home_Section"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_margin="10dp"
-            android:layout_marginTop="20dp"
-            android:text="Section" />
-
         <LinearLayout
+            android:id="@+id/adapter_itemcollectionlayout"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:id="@+id/adapter_itemcollectionlayout"
-            android:layout_below="@id/home_Section"
             android:background="@drawable/textbox_background"
             android:orientation="vertical">
 
-            <TextView
-                android:id="@+id/adapter_nextcollectiontitle"
+            <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_margin="10dp"
-                android:layout_marginTop="10dp"
-                android:layout_marginBottom="10dp"
-                android:text="Next collection date:" />
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_weight="1"
+                    android:text="Next collection date:" />
+
+                <TextView
+                    android:id="@+id/adapter_nextcollectiontitle"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_weight="1"
+                    android:gravity="end" />
+
+            </LinearLayout>
 
             <LinearLayout
 
@@ -54,58 +62,49 @@
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:orientation="horizontal"
-                    >
+                    android:orientation="horizontal">
 
                     <Button
-                        android:id="@+id/home_binbtn1"
+                        android:id="@+id/home_bluebtn"
                         android:layout_width="0dp"
-                        android:layout_weight="1"
-                        android:layout_height="40dp"
-                        android:text="Blue Bin"
+                        android:layout_height="wrap_content"
                         android:layout_marginLeft="5dp"
                         android:layout_marginRight="5dp"
-                        />
+                        android:layout_weight="1"
+                        android:text="Blue Bin" />
 
                     <Button
-                        android:id="@+id/home_binbtn2"
+                        android:id="@+id/home_greenbtn"
                         android:layout_width="0dp"
-                        android:layout_weight="1"
-                        android:layout_height="40dp"
-                        android:text="Garbage"
+                        android:layout_height="wrap_content"
                         android:layout_marginLeft="5dp"
                         android:layout_marginRight="5dp"
-                        />
+                        android:layout_weight="1"
+                        android:text="Green Bin" />
 
                     <Button
-                        android:id="@+id/home_binbtn3"
+                        android:id="@+id/home_garbagebtn"
                         android:layout_width="0dp"
-                        android:layout_weight="1"
-                        android:layout_height="40dp"
-                        android:text="Green Bin"
+                        android:layout_height="wrap_content"
                         android:layout_marginLeft="5dp"
                         android:layout_marginRight="5dp"
-                        />
+                        android:layout_weight="1"
+                        android:text="Garbage" />
                 </LinearLayout>
 
             </LinearLayout>
         </LinearLayout>
 
-
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_below="@id/adapter_itemcollectionlayout"
             android:text="Future Collection Days:"
-            android:textSize="17sp"
-            android:layout_below="@id/adapter_itemcollectionlayout"/>
-
+            android:textSize="17sp" />
     </RelativeLayout>
-
-
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/home_pickupdates_listview"
         android:layout_width="match_parent"
         android:layout_height="wrap_content" />
-
 
 </LinearLayout>

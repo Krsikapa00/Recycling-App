@@ -36,17 +36,17 @@ public class GreenBinFragment extends Fragment {
         titleList.add("Acceptable Liners");
         titleList.add("Non-Acceptable Liners");
 
-        contentList.add("\u0009\u0009\u0009• All food scraps and leftovers, including fruit and vegetables; tea bags and coffee grounds; meat, poultry, bones, fish and shellfish; dairy products, butter and margarine; bread, baked goods, rice, pasta and cereals; gravy and sauces; eggs and eggshells \n" +
-                "\u0009\u0009\u0009• Used facial tissues, paper towels, greasy pizza boxes, microwavable popcorn bags, paper plates and paper napkins \n" +
+        contentList.add("\u0009\u0009\u0009• All food scraps and leftovers, including \n\u0009\u0009\u0009 fruit and vegetables; tea bags and coffee \n\u0009\u0009\u0009 grounds; meat, poultry, bones, fish and \n\u0009\u0009\u0009 shellfish; dairy products, butter and \n\u0009\u0009\u0009 margarine; bread, baked goods, rice, \n\u0009\u0009\u0009 pasta and cereals; gravy and sauces; \n\u0009\u0009\u0009 eggs and eggshells \n" +
+                "\u0009\u0009\u0009• Used facial tissues, paper towels, \n\u0009\u0009\u0009 greasy pizza boxes, microwavable \n\u0009\u0009\u0009 popcorn bags, paper plates and paper \n\u0009\u0009\u0009 napkins \n" +
                 "\u0009\u0009\u0009• Coffee filters, grounds, and tea bags \n" +
                 "\u0009\u0009\u0009• Dryer lint, hair, and sawdust \n" +
-                "\u0009\u0009\u0009• Yard waste such as leaves, weeds, and household plants ");
-        contentList.add("\u0009\u0009\u0009• Plastic and oxo-biodegradable grocery bags, pet litter, pet waste, diapers, feminine hygiene products, dryer sheets, cotton balls and swabs, disposable dusters and sweeper cloths, gravel, stones and dirt ");
-        contentList.add("\u0009\u0009\u0009• Place organic waste loosely in your green bin or use papers liners, such as brown bags or sheets of newspaper (certified compostable bags are also acceptable liners) \n" +
-                "\u0009\u0009\u0009• Collectors must see food waste in the green bin in order to pick it up, but you may include some yard waste as long as food waste is visible ");
+                "\u0009\u0009\u0009• Yard waste such as leaves, weeds, and \n\u0009\u0009\u0009 household plants ");
+        contentList.add("\u0009\u0009\u0009• Plastic and oxo-biodegradable grocery \n\u0009\u0009\u0009 bags, pet litter, pet waste, diapers, \n\u0009\u0009\u0009 feminine hygiene products, dryer sheets, \n\u0009\u0009\u0009 cotton balls and swabs, disposable \n\u0009\u0009\u0009 dusters and sweeper cloths, gravel, \n\u0009\u0009\u0009 stones and dirt ");
+        contentList.add("\u0009\u0009\u0009• Place organic waste loosely in your \n\u0009\u0009\u0009 green bin or use papers liners, such as \n\u0009\u0009\u0009 brown bags or sheets of newspaper \n\u0009\u0009\u0009 (certified compostable bags are also \n\u0009\u0009\u0009 acceptable liners) \n" +
+                "\u0009\u0009\u0009• Collectors must see food waste in the \n\u0009\u0009\u0009 green bin in order to pick it up, but you \n\u0009\u0009\u0009 may include some yard waste as long \n\u0009\u0009\u0009 as food waste is visible ");
         contentList.add("\u0009\u0009\u0009• BPI-certified compostable liner bags \n" +
-                "\u0009\u0009\u0009• Cellulose-lined paper food waste bags or paper yard waste bags \n" +
-                "\u0009\u0009\u0009• Sheets of newspaper, paper towels, or microwave popcorn bags ");
+                "\u0009\u0009\u0009• Cellulose-lined paper food waste bags \n\u0009\u0009\u0009 or paper yard waste bags \n" +
+                "\u0009\u0009\u0009• Sheets of newspaper, paper towels, or \n\u0009\u0009\u0009 microwave popcorn bags ");
         contentList.add("\u0009\u0009\u0009• Plastic shopping or grocery bags \n" +
                 "\u0009\u0009\u0009• Oxo-biodegradable shopping bags \n" +
                 "\u0009\u0009\u0009• Pet waste bags ");

@@ -121,7 +121,6 @@ public class CollectionDatesAdapter extends RecyclerView.Adapter<CollectionDates
         ArrayList<String> collectionDates = new ArrayList<>();
 
         if (date.equals("Monday")) {
-            collectionDates.add("Monday April 6, 2020");
             collectionDates.add("Monday April 13, 2020");
             collectionDates.add("Monday April 20, 2020");
             collectionDates.add("Monday April 27, 2020");
@@ -136,7 +135,6 @@ public class CollectionDatesAdapter extends RecyclerView.Adapter<CollectionDates
             collectionDates.add("Monday June 29, 2020");
             return collectionDates;
         } else if (date.equals("Tuesday")) {
-            collectionDates.add("Tuesday April 7, 2020");
             collectionDates.add("Tuesday April 14, 2020");
             collectionDates.add("Tuesday April 21, 2020");
             collectionDates.add("Tuesday April 28, 2020");
@@ -151,7 +149,6 @@ public class CollectionDatesAdapter extends RecyclerView.Adapter<CollectionDates
             collectionDates.add("Tuesday June 30, 2020");
             return collectionDates;
         } else if (date.equals("Wednesday")) {
-            collectionDates.add("Wednesday April 8, 2020");
             collectionDates.add("Wednesday April 15, 2020");
             collectionDates.add("Wednesday April 22, 2020");
             collectionDates.add("Wednesday April 29, 2020");
@@ -166,7 +163,6 @@ public class CollectionDatesAdapter extends RecyclerView.Adapter<CollectionDates
             collectionDates.add("Wednesday July 1, 2020");
             return collectionDates;
         } else if (date.equals("Thursday")) {
-            collectionDates.add("Thursday April 9, 2020");
             collectionDates.add("Thursday April 16, 2020");
             collectionDates.add("Thursday April 23, 2020");
             collectionDates.add("Thursday April 30, 2020");
@@ -181,7 +177,6 @@ public class CollectionDatesAdapter extends RecyclerView.Adapter<CollectionDates
             collectionDates.add("Thursday July 2, 2020");
             return collectionDates;
         } else {
-            collectionDates.add("Friday April 10, 2020");
             collectionDates.add("Friday April 17, 2020");
             collectionDates.add("Friday April 24, 2020");
             collectionDates.add("Friday May 1, 2020");

@@ -33,18 +33,18 @@ public class GarbageFragment extends Fragment {
 
         titleList.add("Acceptable Items");titleList.add("Important");
 
-        contentList.add("\u0009\u0009\u0009• Anything that cannot be diverted in the blue and grey boxes, green bin, or other \n" +
-                "\u0009\u0009\u0009• Garbage goes straight to landfill (try and reduce your use of these items) \n" +
+        contentList.add("\u0009\u0009\u0009• Anything that cannot be diverted in the \n\u0009\u0009\u0009 blue and grey boxes, green bin, or other \n" +
+                "\u0009\u0009\u0009• Garbage goes straight to landfill (try and \n\u0009\u0009\u0009 reduce your use of these items) \n" +
                 "\u0009\u0009\u0009\u0009\u0009\u0009\u0009o Diapers, pet waste and litter \n" +
                 "\u0009\u0009\u0009\u0009\u0009\u0009\u0009o Dryer sheet and vacuum bags \n" +
-                "\u0009\u0009\u0009\u0009\u0009\u0009\u0009o Large plastic products such as lawn chairs or toys \n" +
-                "\u0009\u0009\u0009\u0009\u0009\u0009\u0009o Hygiene products, gift wrap, and single use coffee pods \n" +
+                "\u0009\u0009\u0009\u0009\u0009\u0009\u0009o Large plastic products such as lawn \u0009\u0009\u0009\u0009\u0009\u0009\u0009 chairs or toys \n" +
+                "\u0009\u0009\u0009\u0009\u0009\u0009\u0009o Hygiene products, gift wrap, and \u0009\u0009\u0009\u0009\u0009\u0009\u0009 single use coffee pods \n" +
                 "\u0009\u0009\u0009\u0009\u0009\u0009\u0009o Non-stretchy plastic bags ");
-        contentList.add("\u0009\u0009\u0009• Broken glass and sharp objects should be placed in a cardboard box, taped shut, and labeled as broken glass \n" +
-                "\u0009\u0009\u0009• There is a one untagged bag or container limit \n" +
-                "\u0009\u0009\u0009• Extra tags can be purchased and must be visible by attaching them to the neck of garbage bags \n" +
-                "\u0009\u0009\u0009• Bags and containers must weigh less than 20 kg (44 lbs) and be less than 135 L in capacity \n" +
-                "\u0009\u0009\u0009• Excess bagged garbage and large garbage items can be disposed of at Waste connections of Canada, 1266 McAdoos Lane (call 613-548-4428 for hours of operation, charges, and accepted items) ");
+        contentList.add("\u0009\u0009\u0009• Broken glass and sharp objects should \n\u0009\u0009\u0009 be placed in a cardboard box, taped shut, \n\u0009\u0009\u0009 and labeled as broken glass \n" +
+                "\u0009\u0009\u0009• There is a one untagged bag or \n\u0009\u0009\u0009 container limit \n" +
+                "\u0009\u0009\u0009• Extra tags can be purchased and must \n\u0009\u0009\u0009 be visible by attaching them to the neck \n\u0009\u0009\u0009 of garbage bags \n" +
+                "\u0009\u0009\u0009• Bags and containers must weigh less \n\u0009\u0009\u0009 than 20 kg (44 lbs) and be less than 135 \n\u0009\u0009\u0009 L in capacity \n" +
+                "\u0009\u0009\u0009• Excess bagged garbage and large \n\u0009\u0009\u0009 garbage items can be disposed of at \n\u0009\u0009\u0009 waste connections of Canada, 1266 \n\u0009\u0009\u0009 McAdoos Lane (call 613-548-4428 for \n\u0009\u0009\u0009 hours of operation, charges, and\n\u0009\u0009\u0009 accepted items) ");
 
 
         GuideAdapter guideAdapter = new GuideAdapter(mCtx, R.layout.adapter_guide_layout, titleList, contentList, pictureList);
