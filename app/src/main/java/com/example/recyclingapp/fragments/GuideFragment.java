@@ -62,6 +62,7 @@ public class GuideFragment extends Fragment {
     }
 
     //Onclick listener for the bottom navigation
+    //Displays the bin that was selected
     private BottomNavigationView.OnNavigationItemSelectedListener mOnNavigationItemSelectedListener =
             new BottomNavigationView.OnNavigationItemSelectedListener() {
                 @Override

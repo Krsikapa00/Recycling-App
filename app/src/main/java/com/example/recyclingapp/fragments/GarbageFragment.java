@@ -30,7 +30,7 @@ public class GarbageFragment extends Fragment {
         ArrayList<String> contentList = new ArrayList<>();
         ArrayList<Integer> pictureList = new ArrayList<>();
         pictureList.add(-1);
-
+//Hard coded dontent for page
         titleList.add("Acceptable Items");titleList.add("Important");
 
         contentList.add("\u0009\u0009\u0009• Anything that cannot be diverted in the \n\u0009\u0009\u0009 blue and grey boxes, green bin, or other \n" +

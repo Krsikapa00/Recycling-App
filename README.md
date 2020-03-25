@@ -1,6 +1,13 @@
 Recycling app created for APSC 100 Module 3.
-Currently (March 21st, 2020) on the Google Play Store
-Name on market: QUEST Recycling - by Krsikapa.Nicholas
+Currently (March 30th, 2020) on the Google Play Store
+Name on market: Quest Recycling - by Krsikapa.Nicholas
+
+How to run the app:
+    To run the app there are two methods that can be used. The first is to download Android Studio and build the app through that software. Android Studio will let users build applications onto virtual devices or Android smart phones if connected. If this method is pursued, users will need to clone this GitHub repository onto their computer and open the project in Android Studio then "Run" the app
+
+    The other method to run the app is download the version on the app store under the name Quest Recycles created by developer domain Krsikapa.Nicholas.
+
+    Both methods will give users a fully working version of the app and see what was created.
 
 How to use App:
 Navigation:

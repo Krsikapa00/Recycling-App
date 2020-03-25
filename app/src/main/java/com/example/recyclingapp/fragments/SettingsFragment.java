@@ -45,7 +45,6 @@ public class SettingsFragment extends Fragment {
         thursdayRBtn = v.findViewById(R.id.settings_option_thursday);
         fridayRBtn = v.findViewById(R.id.settings_option_friday);
 
-        //Need to update picture in the map to pull the saved option AND check the selected day
         mapImg = v.findViewById(R.id.settings_map_image);
 
         collectionGroup.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
@@ -53,7 +52,7 @@ public class SettingsFragment extends Fragment {
             public void onCheckedChanged(RadioGroup group, int checkedId) {
                 RadioButton checkRBtn = group.findViewById(checkedId);
 
-                if (checkRBtn.isChecked()){
+                if (checkRBtn.isChecked()) {
                     setMapImg(checkedId);
                 }
             }
@@ -72,27 +71,30 @@ public class SettingsFragment extends Fragment {
         return v;
     }
 
+    //Saves data to phone
     public void saveData(int checkedDate) {
         SharedPreferences sharedPreferences = this.getActivity().getSharedPreferences(SHARED_PREFS, Context.MODE_PRIVATE);
         SharedPreferences.Editor editor = sharedPreferences.edit();
-        editor.putInt(TEXT, checkedDate );
+        editor.putInt(TEXT, checkedDate);
         editor.apply();
     }
 
-    public void loadData(View v){
+    //    Pulls data from phone
+    public void loadData(View v) {
         SharedPreferences sharedPreferences = getActivity().getSharedPreferences(SHARED_PREFS, Context.MODE_PRIVATE);
-            savedChoice = sharedPreferences.getInt(TEXT, -1);
-            if (savedChoice != -1 ){
-                RadioButton setBtn;
-                setBtn = v.findViewById(savedChoice);
-                if (setBtn != null){
-                    if (!setBtn.isChecked())
-                        setBtn.toggle();
-                }
+        savedChoice = sharedPreferences.getInt(TEXT, -1);
+        if (savedChoice != -1) {
+            RadioButton setBtn;
+            setBtn = v.findViewById(savedChoice);
+            if (setBtn != null) {
+                if (!setBtn.isChecked())
+                    setBtn.toggle();
             }
+        }
     }
 
-    public int findCheckedRadioBtn(){
+    //    Checks which button is selected
+    public int findCheckedRadioBtn() {
         if (mondayRBtn.isChecked())
             return R.id.settings_option_monday;
         else if (tuesdayRBtn.isChecked())
@@ -103,11 +105,12 @@ public class SettingsFragment extends Fragment {
             return R.id.settings_option_thursday;
         else if (fridayRBtn.isChecked())
             return R.id.settings_option_friday;
-        //Default day is Monday
+            //Default day is Monday
         else
             return R.id.settings_option_monday;
     }
 
+    //    changes map image depending on option selected
     private void setMapImg(int checkedId) {
         int image = R.drawable.monday_collection;
         if (checkedId == R.id.settings_option_monday)

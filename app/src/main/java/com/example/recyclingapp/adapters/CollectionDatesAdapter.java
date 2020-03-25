@@ -102,6 +102,7 @@ public class CollectionDatesAdapter extends RecyclerView.Adapter<CollectionDates
         return itemList.size();
     }
 
+    //Fill with list of collection Bins
     public ArrayList<String> getBinTypeList(int position) {
         ArrayList<String> bins1 = new ArrayList<>();
         if (position % 2 == 0) {

@@ -30,7 +30,7 @@ public class BlueBinFragment extends Fragment {
         ArrayList<String> contentList = new ArrayList<>();
         ArrayList<Integer> pictureList = new ArrayList<>();
         pictureList.add(-1);
-
+        //Hard coded dontent for page
         titleList.add("Acceptable Items");titleList.add("Keep Out");titleList.add("Important");
 
         contentList.add("\u0009\u0009\u0009• Plastic food and beverage containers, \n\u0009\u0009\u0009 including bottles, jars, tubs, lids, \n\u0009\u0009\u0009 cartons, trays, and clamshells \n" +
@@ -46,6 +46,7 @@ public class BlueBinFragment extends Fragment {
                 "\u0009\u0009\u0009• There is a 20 kg (44 lbs) weight limit for \n\u0009\u0009\u0009 the blue bins and their content \n" +
                 "\u0009\u0009\u0009• Be sure to check labeling for certain \n\u0009\u0009\u0009 plastic items that are compostable.");
 
+        //Displays all information in a list
         GuideAdapter guideAdapter = new GuideAdapter(mCtx, R.layout.adapter_guide_layout, titleList, contentList, pictureList);
         recyclerView.setAdapter(guideAdapter);
         recyclerView.setLayoutManager(new LinearLayoutManager(mCtx));

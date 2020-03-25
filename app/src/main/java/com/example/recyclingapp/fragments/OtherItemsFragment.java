@@ -29,7 +29,7 @@ public class OtherItemsFragment extends Fragment {
         ArrayList<String> contentList = new ArrayList<>();
         ArrayList<Integer> pictureList = new ArrayList<>();
         pictureList.add(-1);
-
+//Hard coded dontent for page
         titleList.add("Acceptable Hazardous Items");
         titleList.add("Non-Acceptable Hazardous Items");
         titleList.add("Important");

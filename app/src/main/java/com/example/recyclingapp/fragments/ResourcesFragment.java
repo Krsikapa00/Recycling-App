@@ -29,7 +29,7 @@ public class ResourcesFragment extends Fragment {
         ArrayList<String> titleList = new ArrayList<>();
         ArrayList<String> contentList = new ArrayList<>();
         ArrayList<Integer> pictureList = new ArrayList<>();
-
+//Hard coded dontent for page
         titleList.add("Recycling Council of Ontario (RCO)");
         titleList.add("Government of Ontario - Waste Management");
         titleList.add("Kingston Area Recycling Centre (KARC)");

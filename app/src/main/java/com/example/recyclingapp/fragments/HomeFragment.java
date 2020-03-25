@@ -41,6 +41,7 @@ public class HomeFragment extends Fragment {
         greenBtn = v.findViewById(R.id.home_greenbtn);
         garbageBtn = v.findViewById(R.id.home_garbagebtn);
 
+        //Sends user to guide page depending on the bin clicked
         blueBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -64,6 +65,7 @@ public class HomeFragment extends Fragment {
         RecyclerView recyclerView = v.findViewById(R.id.home_pickupdates_listview);
         String collectionDate = getCollectionDate();
 
+        //Builds the list of collections days
         CollectionDatesAdapter collectionDatesAdapter = new CollectionDatesAdapter(mCtx, R.layout.adapter_collectiondates_layout, collectionDate, getActivity().getSupportFragmentManager());
         //Pushes it to the recyclerView
         recyclerView.setAdapter(collectionDatesAdapter);
@@ -95,6 +97,8 @@ public class HomeFragment extends Fragment {
             return "Monday";
         }
     }
+
+    //Passes the new screen along with bin information to switch screens with
     public void switchScreen(String bin){
         Fragment fragment = new GuideFragment();
         Bundle arguments = new Bundle();

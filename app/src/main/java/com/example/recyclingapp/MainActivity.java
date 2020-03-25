@@ -74,9 +74,9 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         materialSearchView.setSuggestions(mItemList);
         materialSearchView.setOnQueryTextListener(new MaterialSearchView.OnQueryTextListener() {
             @Override
-            public boolean onQueryTextSubmit(String query) {
-                //Here Create your filtering
+            //    Displays pop up when suggestion is clicked or when valid item is searched
 
+            public boolean onQueryTextSubmit(String query) {
                 //When you tap an option and click the search button it will contain the query.
                 //Forces it to be an option within the list
 
@@ -90,16 +90,13 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
 
             @Override
             public boolean onQueryTextChange(String newText) {
-                //You can make change realtime if you typing here
-                //See my tutorials for filtering with ListView
-//                Log.i(TAG, "CLICKKK");
-
                 return false;
             }
         });
         materialSearchView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+//    Displays pop up when suggestion is clicked or when valid item is searched
 
                 String data = (String) parent.getItemAtPosition(position);
                 int pos = getPosition(mItemList, data);
@@ -126,6 +123,7 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         return true;
     }
 
+//    Displays pop up when suggestion is clicked or when valid item is searched
     public void openDialog(int position, String[] itemList, String[] binList) {
         LayoutInflater inflater = LayoutInflater.from(this);
         View view = inflater.inflate(R.layout.alert_dialog_items, null);
@@ -186,7 +184,7 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
     public static void SetCheckedMenuItem(int menuItem) {
         navigationView.setCheckedItem(menuItem);
     }
-
+//Hard coded data, options for the search bar
     public String[] getItemLists() {
         String[] itemList = {
                 "Newspaper", "General paper", "Cardboard", "Paper cups",

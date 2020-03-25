@@ -21,7 +21,7 @@ public class AboutusFragment extends Fragment {
 
         TextView title = v.findViewById(R.id.aboutus_quest_title);
         TextView longTitle = v.findViewById(R.id.aboutus_quest_titlelong);
-
+//adds underlines to the title for aesthetics
         SpannableString spannableTitle = new SpannableString("Q.U.E.S.T"); spannableTitle.setSpan(new UnderlineSpan(),0,spannableTitle.length(),0);
         SpannableString spannableLong = new SpannableString("Queen's University Experimental Sustainability Team");spannableLong.setSpan(new UnderlineSpan(),0,spannableLong.length(),0);
         title.setText(spannableTitle);

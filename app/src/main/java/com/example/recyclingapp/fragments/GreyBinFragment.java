@@ -29,7 +29,7 @@ public class GreyBinFragment extends Fragment {
         ArrayList<String> contentList = new ArrayList<>();
         ArrayList<Integer> pictureList = new ArrayList<>();
         pictureList.add(-1);
-
+//Hard coded dontent for page
         titleList.add("Acceptable Items");
         titleList.add("Keep Out");
         titleList.add("Important");

@@ -35,7 +35,7 @@ public class GreenBinFragment extends Fragment {
         titleList.add("Important");
         titleList.add("Acceptable Liners");
         titleList.add("Non-Acceptable Liners");
-
+//Hard coded dontent for page
         contentList.add("\u0009\u0009\u0009• All food scraps and leftovers, including \n\u0009\u0009\u0009 fruit and vegetables; tea bags and coffee \n\u0009\u0009\u0009 grounds; meat, poultry, bones, fish and \n\u0009\u0009\u0009 shellfish; dairy products, butter and \n\u0009\u0009\u0009 margarine; bread, baked goods, rice, \n\u0009\u0009\u0009 pasta and cereals; gravy and sauces; \n\u0009\u0009\u0009 eggs and eggshells \n" +
                 "\u0009\u0009\u0009• Used facial tissues, paper towels, \n\u0009\u0009\u0009 greasy pizza boxes, microwavable \n\u0009\u0009\u0009 popcorn bags, paper plates and paper \n\u0009\u0009\u0009 napkins \n" +
                 "\u0009\u0009\u0009• Coffee filters, grounds, and tea bags \n" +

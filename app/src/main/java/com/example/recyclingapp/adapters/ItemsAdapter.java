@@ -89,6 +89,8 @@ public class ItemsAdapter extends RecyclerView.Adapter<ItemsAdapter.MyViewHolder
         return itemList.size();
     }
 
+
+    //Creates list of vendors and common items among each vendor Hard coded data. Ideally would be put into a database to save space
     public ArrayList<ItemClass> getItemList(String filter) {
         ArrayList<ItemClass> overallList = new ArrayList<>();
         ArrayList<ItemClass> filteredList;

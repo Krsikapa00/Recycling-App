@@ -32,7 +32,7 @@ public class QueensFragment extends Fragment implements QueensAdapter.OnItemList
         v =inflater.inflate(R.layout.fragment_queens, container,false);
         mCtx = getActivity().getApplicationContext();
         RecyclerView recyclerView = v.findViewById(R.id.queens_recyclerview);
-
+        //Hard coded dontent for page
         //HARDCODED DATA FOR DINING HALLS AND THEIR LOCATIONS
         vendorList = new ArrayList<>();
         locationList = new ArrayList<>();
@@ -62,6 +62,7 @@ public class QueensFragment extends Fragment implements QueensAdapter.OnItemList
     }
     
     @Override
+    //on Click listener which displays the items when specific vendor is clicked
     public void onItemListener(int position) {
         LayoutInflater inflater = LayoutInflater.from(getContext());
         View view = inflater.inflate(R.layout.alert_dialog_vendors, null);
